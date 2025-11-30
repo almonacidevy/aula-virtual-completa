@@ -25,67 +25,276 @@ const AulaVirtual = () => {
     welcomeTitle: 'Bienvenido al Aula Virtual',
     welcomeDescription: 'Plataforma educativa para el aprendizaje en línea',
     coursesBackground: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=800&fit=crop',
-    courses: [
+   courses: [
+  {
+    id: 1,
+    name: 'SketchUp para Principiantes Pro',
+    icon: '🏗️',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=300&h=200&fit=crop',
+    modules: [
       {
         id: 1,
-        name: 'Programación Web',
-        icon: '💻',
-        image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&h=200&fit=crop',
-        modules: [
-          {
-            id: 1,
-            name: 'Módulo 1: HTML y CSS',
-            files: [
-              { name: 'Introducción.pdf', type: 'pdf', url: '#' },
-              { name: 'Tutorial CSS.mp4', type: 'video', url: '#' },
-              { name: 'Ejercicios.zip', type: 'zip', url: '#' }
-            ]
-          },
-          {
-            id: 2,
-            name: 'Módulo 2: JavaScript',
-            files: [
-              { name: 'Fundamentos JS.pdf', type: 'pdf', url: '#' },
-              { name: 'Video Tutorial.mp4', type: 'video', url: '#' }
-            ]
-          }
+        name: 'Módulo 1: Introducción a SketchUp y al Diseño en Melamina',
+        files: [
+          { name: 'Qué es SketchUp.pdf', type: 'pdf', url: '#' },
+          { name: 'Entorno de trabajo.mp4', type: 'video', url: '#' },
+          { name: 'Conceptos de melamina.pdf', type: 'pdf', url: '#' }
         ]
       },
       {
         id: 2,
-        name: 'Diseño Gráfico',
-        icon: '🎨',
-        image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=300&h=200&fit=crop',
-        modules: [
-          {
-            id: 1,
-            name: 'Módulo 1: Photoshop Básico',
-            files: [
-              { name: 'Manual Photoshop.pdf', type: 'pdf', url: '#' },
-              { name: 'Recursos.zip', type: 'zip', url: '#' }
-            ]
-          }
+        name: 'Módulo 2: Configuración del Proyecto',
+        files: [
+          { name: 'Configuración de unidades.pdf', type: 'pdf', url: '#' },
+          { name: 'Organización del proyecto.mp4', type: 'video', url: '#' }
         ]
       },
       {
         id: 3,
-        name: 'Marketing Digital',
-        icon: '📱',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=200&fit=crop',
-        modules: [
-          {
-            id: 1,
-            name: 'Módulo 1: Redes Sociales',
-            files: [
-              { name: 'Estrategias.pdf', type: 'pdf', url: '#' },
-              { name: 'Casos de éxito.mp4', type: 'video', url: '#' }
-            ]
-          }
+        name: 'Módulo 3: Herramientas Fundamentales',
+        files: [
+          { name: 'Herramientas básicas.pdf', type: 'pdf', url: '#' },
+          { name: 'Tutorial componentes.mp4', type: 'video', url: '#' },
+          { name: 'Ejercicios prácticos.zip', type: 'zip', url: '#' }
+        ]
+      },
+      {
+        id: 4,
+        name: 'Módulo 4: Construcción de Piezas en Melamina',
+        files: [
+          { name: 'Crear tableros.pdf', type: 'pdf', url: '#' },
+          { name: 'Aplicación de texturas.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 5,
+        name: 'Módulo 5: Diseño de Módulos Básicos',
+        files: [
+          { name: 'Módulo de cocina.pdf', type: 'pdf', url: '#' },
+          { name: 'Módulo de closet.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 6,
+        name: 'Módulo 6: Aplicación de Herrajes',
+        files: [
+          { name: 'Ubicación de bisagras.pdf', type: 'pdf', url: '#' },
+          { name: 'Correderas y soportes.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 7,
+        name: 'Módulo 7: Diseño Completo de un Mueble Real',
+        files: [
+          { name: 'Proyecto mueble completo.pdf', type: 'pdf', url: '#' },
+          { name: 'Ensamblaje paso a paso.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 8,
+        name: 'Módulo 8: Render Básico del Mueble',
+        files: [
+          { name: 'Configuración de render.pdf', type: 'pdf', url: '#' },
+          { name: 'Iluminación y materiales.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 9,
+        name: 'Módulo 9: Listado de Piezas y Planos de Corte',
+        files: [
+          { name: 'Despiece de muebles.pdf', type: 'pdf', url: '#' },
+          { name: 'Exportación a LayOut.mp4', type: 'video', url: '#' },
+          { name: 'Plantilla planos.zip', type: 'zip', url: '#' }
+        ]
+      },
+      {
+        id: 10,
+        name: 'Módulo 10: Proyecto Final y Certificación',
+        files: [
+          { name: 'Requisitos proyecto final.pdf', type: 'pdf', url: '#' },
+          { name: 'Guía de entrega.pdf', type: 'pdf', url: '#' }
         ]
       }
     ]
-  });
-
+  },
+  {
+    id: 2,
+    name: 'Instalaciones Eléctricas Domiciliarias desde Cero',
+    icon: '⚡',
+    image: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=300&h=200&fit=crop',
+    modules: [
+      {
+        id: 1,
+        name: 'Módulo 1: Introducción a la Electricidad',
+        files: [
+          { name: 'Qué es la electricidad.pdf', type: 'pdf', url: '#' },
+          { name: 'Voltaje corriente resistencia.mp4', type: 'video', url: '#' },
+          { name: 'Identificación de cables.pdf', type: 'pdf', url: '#' }
+        ]
+      },
+      {
+        id: 2,
+        name: 'Módulo 2: Seguridad Eléctrica en el Hogar',
+        files: [
+          { name: 'Riesgos eléctricos.pdf', type: 'pdf', url: '#' },
+          { name: 'Equipo de protección.mp4', type: 'video', url: '#' },
+          { name: 'Cuestionario seguridad.pdf', type: 'pdf', url: '#' }
+        ]
+      },
+      {
+        id: 3,
+        name: 'Módulo 3: Herramientas y Materiales',
+        files: [
+          { name: 'Herramientas básicas.pdf', type: 'pdf', url: '#' },
+          { name: 'Uso del multímetro.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 4,
+        name: 'Módulo 4: Circuitos Eléctricos Básicos',
+        files: [
+          { name: 'Circuitos serie y paralelo.pdf', type: 'pdf', url: '#' },
+          { name: 'Interruptor simple.mp4', type: 'video', url: '#' },
+          { name: 'Práctica circuito.pdf', type: 'pdf', url: '#' }
+        ]
+      },
+      {
+        id: 5,
+        name: 'Módulo 5: Instalación de Luminarias',
+        files: [
+          { name: 'Instalación de focos.pdf', type: 'pdf', url: '#' },
+          { name: 'Interruptor doble.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 6,
+        name: 'Módulo 6: Instalación de Tomacorrientes',
+        files: [
+          { name: 'Tipos de tomacorrientes.pdf', type: 'pdf', url: '#' },
+          { name: 'Polaridad correcta.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 7,
+        name: 'Módulo 7: Empalmes y Conexiones Seguras',
+        files: [
+          { name: 'Tipos de empalmes.pdf', type: 'pdf', url: '#' },
+          { name: 'Uso de conectores.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 8,
+        name: 'Módulo 8: Pruebas y Verificaciones',
+        files: [
+          { name: 'Comprobación de continuidad.pdf', type: 'pdf', url: '#' },
+          { name: 'Detección de fallas.mp4', type: 'video', url: '#' },
+          { name: 'Checklist revisión.pdf', type: 'pdf', url: '#' }
+        ]
+      },
+      {
+        id: 9,
+        name: 'Proyecto Final: Circuito Completo',
+        files: [
+          { name: 'Requisitos proyecto.pdf', type: 'pdf', url: '#' },
+          { name: 'Guía de instalación.mp4', type: 'video', url: '#' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: 'Instalación, Medición y Certificación de Sistemas de Puesta a Tierra',
+    icon: '🔌',
+    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=300&h=200&fit=crop',
+    modules: [
+      {
+        id: 1,
+        name: 'Módulo 1: Fundamentos de Seguridad Eléctrica',
+        files: [
+          { name: 'Conceptos básicos SPT.pdf', type: 'pdf', url: '#' },
+          { name: 'Riesgos eléctricos.mp4', type: 'video', url: '#' },
+          { name: 'Normativas internacionales.pdf', type: 'pdf', url: '#' }
+        ]
+      },
+      {
+        id: 2,
+        name: 'Módulo 2: Tipos de Sistemas de Puesta a Tierra',
+        files: [
+          { name: 'Sistemas TT TN IT.pdf', type: 'pdf', url: '#' },
+          { name: 'Tipos de electrodos.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 3,
+        name: 'Módulo 3: Normativas y Reglamentos',
+        files: [
+          { name: 'Reglamento nacional.pdf', type: 'pdf', url: '#' },
+          { name: 'Documentación requerida.pdf', type: 'pdf', url: '#' }
+        ]
+      },
+      {
+        id: 4,
+        name: 'Módulo 4: Equipos y Herramientas de Medición',
+        files: [
+          { name: 'Telurímetros y megóhmetros.pdf', type: 'pdf', url: '#' },
+          { name: 'Calibración de instrumentos.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 5,
+        name: 'Módulo 5: Técnicas de Medición',
+        files: [
+          { name: 'Método Wenner.pdf', type: 'pdf', url: '#' },
+          { name: 'Método Schlumberger.pdf', type: 'pdf', url: '#' },
+          { name: 'Fall-of-Potential.mp4', type: 'video', url: '#' },
+          { name: 'Procedimientos paso a paso.pdf', type: 'pdf', url: '#' }
+        ]
+      },
+      {
+        id: 6,
+        name: 'Módulo 6: Interpretación de Resultados',
+        files: [
+          { name: 'Análisis de valores.pdf', type: 'pdf', url: '#' },
+          { name: 'Diagnóstico de fallas.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 7,
+        name: 'Módulo 7: Mejoramiento de la Puesta a Tierra',
+        files: [
+          { name: 'Técnicas para bajar resistencia.pdf', type: 'pdf', url: '#' },
+          { name: 'Uso de bentonita y gel.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 8,
+        name: 'Módulo 8: Documentación y Certificación',
+        files: [
+          { name: 'Elaboración de informes.pdf', type: 'pdf', url: '#' },
+          { name: 'Formatos de certificación.pdf', type: 'pdf', url: '#' },
+          { name: 'Diagramas unifilares.zip', type: 'zip', url: '#' }
+        ]
+      },
+      {
+        id: 9,
+        name: 'Módulo 9: Casos Prácticos y Ejercicios',
+        files: [
+          { name: 'Ejercicios de interpretación.pdf', type: 'pdf', url: '#' },
+          { name: 'Errores comunes en campo.mp4', type: 'video', url: '#' }
+        ]
+      },
+      {
+        id: 10,
+        name: 'Módulo 10: Práctica Final y Certificación',
+        files: [
+          { name: 'Prueba teórica.pdf', type: 'pdf', url: '#' },
+          { name: 'Proyecto final.pdf', type: 'pdf', url: '#' },
+          { name: 'Guía de certificación.pdf', type: 'pdf', url: '#' }
+        ]
+      }
+    ]
+  }
+]
   // Contraseñas almacenadas (en producción estarían hasheadas en el servidor)
   const [passwords, setPasswords] = useState(() => {
     const stored = localStorage.getItem('aulaPasswords');
