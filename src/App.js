@@ -288,14 +288,15 @@ const AulaVirtual = () => {
         name: 'Módulo 10: Práctica Final y Certificación',
         files: [
           { name: 'Prueba teórica.pdf', type: 'pdf', url: '#' },
-          { name: 'Proyecto final.pdf', type: 'pdf', url: '#' },
-          { name: 'Guía de certificación.pdf', type: 'pdf', url: '#' }
+              { name: 'Proyecto final.pdf', type: 'pdf', url: '#' },
+              { name: 'Guía de certificación.pdf', type: 'pdf', url: '#' }
+            ]
+          }
         ]
       }
     ]
-  }
-]
-  // Contraseñas almacenadas (en producción estarían hasheadas en el servidor)
+  });
+
   const [passwords, setPasswords] = useState(() => {
     const stored = localStorage.getItem('aulaPasswords');
     return stored ? JSON.parse(stored) : {
